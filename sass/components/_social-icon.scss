@@ -1,0 +1,38 @@
+.c-social-icon{
+    padding:1rem 1.5rem;
+    font-size:1rem;
+    max-width: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    color:white;
+    border: solid 1px $white-50;
+    transition:0.2s;
+    &--facebook:hover{
+         
+            background: #3b5998;
+            border-color: #3b5998;
+            transform:scale(1.1);
+
+       
+    }
+    &--twitter:hover{
+        background: #00aced;
+        border-color: #00aced;
+        transform:scale(1.1);
+
+    }
+    &--linkedin:hover{
+        background: #0077b5;
+        border-color: #0077b5;
+        transform:scale(1.1);
+
+    }
+    &--google:hover{
+        background: #cd4539;
+        border-color: #cd4539;
+        transform:scale(1.1);
+
+    }
+}

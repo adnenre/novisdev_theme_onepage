@@ -1,0 +1,50 @@
+
+// test must be deleted
+@import 
+  'test/test';
+@import
+  'abstracts/variables',
+  'abstracts/functions',
+  'abstracts/mixins',
+  'abstracts/placeholders';
+
+@import   
+  'base/base',  
+  'base/reset',
+  'base/utilities',
+  'base/typography'; 
+
+@import
+  'layout/navigation',
+  'layout/header',
+  'layout/footer',
+  'layout/forms';
+
+@import 
+  'components/navbar',
+  'components/logo',
+  'components/loader',
+  'components/buttons',
+  'components/carousel',
+  'components/cover', 
+  'components/dropdown',
+  'components/section',
+  'components/filter',
+  'components/cards',
+  'components/avatar',
+  'components/scroll',
+  'components/form',
+  'components/social-icon',
+  'components/feature-box',
+  'components/portlet',
+  'components/video';
+
+@import
+  'pages/home',
+  'pages/works',
+  'pages/clients',
+  'pages/contact'; 
+
+@import
+  'themes/theme';
+  

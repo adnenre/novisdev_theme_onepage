@@ -1,0 +1,199 @@
+.c-navbar {
+    width: 100%;
+    transition: .3s;
+    &--small {
+        height: 60px;
+    }
+    &--large {
+        height: 90px;
+    }
+    &--fixed {
+        position: fixed;
+        top: 0;
+    }
+    &__container {
+        height: inherit;
+        padding: 0 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__menu {
+        justify-content: center;
+        height: inherit;
+    }
+    &__list {
+        display: flex;
+        padding: 0;
+        text-align: center;
+        font-size: 1rem;
+        height: inherit;
+    }
+    &__element {
+        display: flex;
+        height: inherit;
+    }
+    &__link {
+        height: inherit;
+        width: 100px;
+        color: $white;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        &:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 2px;
+            width: 100%;
+            transition: all 0.3s;
+            background: $white-10;
+        }
+        &:not(.active) {
+            &:hover:after {
+                height: 100%;
+            }
+        }
+        &.active {
+            border-bottom: solid 2px $white-10;
+        }
+        &:hover {}
+    }
+    &__logo {
+        margin: auto;
+        padding: 0 1rem;
+        border-radius: 0 0 10px 10px;
+        &--text {
+            text-align: center;
+            font-size: 1rem;
+        }
+    }
+    &__toggler {
+        position: relative;
+        display: none;
+        width: 34px;
+        height: 34px;
+       //border: solid 0.5px $white;
+        
+       
+        >.barre {
+            display: block;
+            width: 15px;
+            height: 0.5px;
+            position: absolute;
+            background: $white;
+            white-space: nowrap;
+            transition-property: all;
+            transition-duration: 0.3s;
+            transition-timing-function: cubic-bezier(0.585, -0.6, 0.43, 1.65);
+            transition: all ease .3s;
+            top: 16px;
+            left: 50%;
+            right: 0;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            &:before,
+            &:after {
+                position: absolute;
+                content: '';
+                display: inline-block;
+                width: 15px;
+                height: 1px;
+                transition: all ease .3s;
+                outline: 1px solid transparent;
+                left: 0;
+                transition-property: all;
+                transition-duration: 0.3s;
+                transition-timing-function: cubic-bezier(0.585, -0.6, 0.43, 1.65);
+                background: $white;
+            }
+            &:before {
+                top: -5px;
+            }
+            &:after {
+                top: 5px;
+            }
+         
+        }
+        
+        &--isOpen {
+            >.barre {
+                background: transparent;
+                &:before {
+                    -webkit-transform: translateY(5px) rotateZ(-45deg);
+                    transform: translateY(5px) rotateZ(-45deg);
+                }
+                &:after {
+                    -webkit-transform: translateY(-5px) rotateZ(45deg);
+                    transform: translateY(-5px) rotateZ(45deg);
+                }
+            }
+        }
+    }
+}
+
+.c-navbar--mobile {
+    .c-navbar__container {
+        justify-content: space-between;
+    }
+    .c-navbar__toggler {
+        display: block;
+    }
+    .c-navbar__list {
+        flex-direction: column;
+        position: fixed;
+        width: 100%;
+        background: $white;
+        top: 60px;
+        left: 0;
+        height: 0px;
+        opacity: 0;
+        transition: .5s;
+        &.isOpen {
+            opacity: 1;
+            height: calc(100% - 60px);
+            padding: 5rem;
+        }
+        .c-navbar__element {
+            justify-content: center;
+            align-items: center;
+            .c-navbar__link {
+                font-size: 1.5rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: black;
+                height: 100%;
+                position: relative;
+                width:200px;
+               
+                margin:0.5rem;
+                &:after {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 0px;
+                    height: 100%;
+                    @include cubic-animation;
+                    background: $black;
+                    z-index:-1;
+                }
+                &:hover {
+                    color: $white !important;
+                }
+                &:hover:after {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+.u-list--inline {
+    display: flex;
+    margin: 1rem;
+}

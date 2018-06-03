@@ -1,0 +1,107 @@
+
+	.works{
+        overflow: hidden;
+    }
+	.c-filter{
+		width: 100%;
+		height: 100%;
+		position: relative;
+		z-index: 1;
+		opacity: 1 !important;
+		&__element{
+			margin: 0 15px;
+	        display:inline-block;
+			font-size: 16px;
+			position: relative;
+			z-index: 2;
+			padding:1rem;
+			
+			border : solid 1px transparent;
+			transition: all 0.2s;
+            cursor:pointer;
+			&:hover{
+				border : solid 1px $black;
+			}
+		}
+
+		.active{
+			border : solid 1px $black;
+			background:$dark;
+			color:white;
+			
+		}
+	}
+
+	.items{
+		padding: 0 15px;
+		margin-bottom: 30px;
+	}
+
+	.item-img{
+		position: relative;
+        overflow: hidden;
+        
+         > img {
+            width: 100%;
+            height: auto;
+            transition:.2s;
+        }
+        
+		&:hover .c-overlay{
+			opacity: 1;
+			transform: translateY(0);
+		}
+
+		&:hover h6, &:hover .icons{
+			transform: translateY(0);
+		}
+
+		h6{
+			font-size: 12px;
+			font-weight: 700;
+			letter-spacing: 2px;
+			position: relative;
+			margin-bottom: 15px;
+			transform: translateY(-15px);
+			transition: all .2s;
+		}
+
+		.icon{
+
+			i{
+				display: inline-block;
+				width: 30px;
+				height: 30px;
+				line-height: 28px;
+				border-radius: 50%;
+				border: 1px solid $white;
+				background: $white;
+				color: $dark;
+				transition:0.2s;
+
+				&:hover{
+					transform:scale(1.05);
+				}
+			}
+		}
+	}
+
+	.c-overlay{
+		position: absolute;
+		display: flex;
+		top: 5px;
+		left: 5px;
+		right: 5px;
+		bottom: 5px;
+		padding: 1px;
+		background:$black-80;
+		opacity: 0;
+		transition: all .2s;
+		z-index: 2;
+
+		&__info{
+			margin:auto;
+			color:white;
+		}
+	}
+    

@@ -1,0 +1,13 @@
+.c-portlet__container{
+    display: flex;
+    top:-50px;
+    height: 100%;
+    position:relative;
+    background:linear-gradient($mint,$aqua);
+    z-index: 0;
+  }
+  .c-portlet__text-box{
+    
+     margin:auto;
+     padding: 0 2rem;
+  }

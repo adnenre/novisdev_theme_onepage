@@ -1,0 +1,291 @@
+
+
+/* ==========================================================================
+   #COLORS UTILITIES
+   ========================================================================== */
+$colors :( 
+
+
+primary     : $primary-color,
+secondary   : $secondary-color,
+info        : $info-color,
+success     : $success-color,
+warning     : $warning-color,
+danger      : $danger-color,
+
+// natural color
+grape-light : $grape-light,   
+grape       : $grape, 
+bitter-light: $bitter-light,
+bitter      : $bitter,
+sun-light   : $sun-light,
+sun         : $sun,
+grass-light : $grass-light,
+grass       : $grass,
+mint-light  : $mint-light,
+mint        : $mint,
+aqua-light  : $aqua-light,
+aqua        : $aqua,
+jeans-light : $jeans-light,
+jeans       : $jeans,
+lavandre-light:$lavandre-light,
+lavandre    :$lavandre , 
+pink-light  : $pink-light,
+pink        : $pink,
+gray-light  : $gray-30,
+gray        : $gray-40,
+dark-light  : $gray-50,
+dark        : $gray-60,
+// white opacity
+white-10 : $white-10,
+white-15 : $white-15,
+white-20 : $white-20,
+white-25 : $white-25,
+white-30 : $white-30,
+white-35 : $white-35,
+white-40 : $white-40,
+white-45 : $white-45,
+white-50 : $white-50,
+
+white-55 : $white-55,
+white-60 : $white-60,
+white-65 : $white-65,
+white-70 : $white-70,
+white-75 : $white-75,
+white-80 : $white-80,
+white-85 : $white-85,
+white-90 : $white-90,
+white    : $white,
+// black opacity
+black-10 : $black-10,
+black-15 : $black-15,
+black-20 : $black-20,
+black-25 : $black-25,
+black-30 : $black-30,
+black-35 : $black-35,
+black-40 : $black-40,
+black-45 : $black-45,
+black-50 : $black-50,
+black-55 : $black-55,
+black-60 : $black-60,
+black-65 : $black-65,
+black-70 : $black-70,
+black-75 : $black-75,
+black-80 : $black-80,
+black-85 : $black-85,
+black-90 : $black-90,
+black    : $black
+    );
+@each $color, $value in $colors {
+
+    .u-text--#{$color} {
+        color: $value !important;
+        }
+    .u-bg--#{$color} {
+        background: $value !important;
+     }
+        
+}
+
+/* ==========================================================================
+   #FONT SIZE UTILITIES
+   ========================================================================== */
+$sizes:(
+
+xs : $font-size-xsmall,
+sm : $font-size-small,
+m  : $font-size-medium,
+l  : $font-size-large,
+xl : $font-size-xlarge
+);
+
+/**
+* sizes
+* 
+* xs : xsmall
+* sm : small
+* m  : medium
+* l  : large
+* xl : xlarge
+*
+*/
+
+@each $size , $value in $sizes{
+	.u-size-#{$size} {
+		font-size:$value;
+	}
+}
+
+.u-text--left{
+	text-align:left;
+}
+.u-text--right{
+	text-align:right;
+}
+.u-text--center{
+	text-align:center;
+}
+
+/* ==========================================================================
+   #SPACING UTILITIES
+   ========================================================================== */
+
+
+
+/**
+ * Spacing utilities are used to provide spacing between components using 
+ * margins or inside the components using paddings. Different sizes allow you 
+ * to easily construct consistent layouts of components.
+ */
+
+ $spacers: (
+	zero:0,
+	auto: auto,
+	xs: $s-xsmall,
+	s:  $s-small,
+	m:  $s,
+	l:  $s-large,
+	xl: $s-xlarge
+);
+
+/**
+ * Margins
+ *
+ * m  -> all sides
+ * mt -> margin-top
+ * mr -> margin-right 
+ * mb -> margin-bottom
+ * ml -> margin-left
+ * mv -> margin-top & margin-bottom (vertically)
+ * mh -> margin-right & margin-left (horizontaly)
+ *
+ * Paddings
+ *
+ * p  -> all sides
+ * pt -> padding-top
+ * pr -> padding-right 
+ * pb -> padding-bottom
+ * pl -> padding-left
+ * pv -> padding-top & padding-bottom (vertically)
+ * ph -> padding-right & padding-left (horizontaly)
+ *
+ */
+@each $property, $value in $spacers {
+	.u-m-#{$property} {
+		margin: $value !important;
+	}
+
+	.u-mt-#{$property} {
+		margin-top: $value !important;
+	}
+
+	.u-mr-#{$property} {
+		margin-right: $value !important;
+	}
+
+	.u-mb-#{$property} {
+		margin-bottom: $value !important;
+	}
+
+	.u-ml-#{$property} {
+		margin-left: $value !important;
+	}
+
+	.u-mv-#{$property} {
+		margin-top: $value !important;
+		margin-bottom: $value !important;
+	}
+
+	.u-mh-#{$property} {
+		margin-right: $value !important;
+		margin-left: $value !important;
+	}
+}
+
+
+
+
+@each $property, $value in $spacers {
+	.u-p-#{$property} {
+		padding: $value !important;
+	}
+
+	.u-pt-#{$property} {
+		padding-top: $value !important;
+	}
+
+	.u-pr-#{$property} {
+		padding-right: $value !important;
+	}
+
+	.u-pb-#{$property} {
+		padding-bottom: $value !important;
+	}
+
+	.u-pl-#{$property} {
+		padding-left: $value !important;
+	}
+
+	.u-pv-#{$property} {
+		padding-top: $value !important;
+		padding-bottom: $value !important;
+	}
+
+	.u-ph-#{$property} {
+		padding-right: $value !important;
+		padding-left: $value !important;
+	}
+}
+/* ==========================================================================
+   #IMAGE UTILITIES
+   ========================================================================== */
+   .u-bg--image{
+	height: 100%;
+	width: 100%;
+	 background-size: cover;
+	 background-repeat: no-repeat;
+	 background-position: center;
+	 margin: 0;
+	 position: absolute;
+	 left: 0;
+	 top: 0;
+	 z-index: -1;
+	 &-fixed{
+		 position:fixed;
+	 }
+   }
+
+   /* ==========================================================================
+   # OPACITY UTILITY
+   ========================================================================== */
+.u-opa-half{
+	opacity:0.5;
+}
+.u-opa-full{
+	opacity:1;
+}
+
+// filter
+@each $color, $value in $colors {
+
+    
+    .u-filter--#{$color} {
+		background: $value !important;
+		
+     }
+        
+}
+
+/* ==========================================================================
+   # TEST BREAK
+   ========================================================================== */
+
+.u-text--break{
+	box-decoration-break: clone;
+	-webkit-box-decoration-break: clone;
+	display: inline;
+	padding: 0.15rem 0.5rem;
+}
+/* ==========================================================================
+   # gradient bg
+   ========================================================================== */

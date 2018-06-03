@@ -1,0 +1,17 @@
+
+
+.box-test{
+    position:fixed;
+    z-index:10000;
+    width:5px;
+    height:5px;
+    top:5px;
+    display:flex;
+    background:orange;
+    &__content{
+        margin:auto;
+        height:1px;
+        width:inherit;
+        background:white;
+    }
+}

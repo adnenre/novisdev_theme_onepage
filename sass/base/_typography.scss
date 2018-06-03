@@ -1,0 +1,73 @@
+
+.c-text__heading{
+    padding:5rem 0;
+    text-align:center;
+    &--main{
+     padding:1rem;
+     font-size:2.5rem;
+    }
+    &--desc{
+      padding-top:1rem;
+    }
+}
+.c-text__primary{   
+    text-transform: uppercase;
+   
+    text-align:center;
+
+
+    &--main{
+        display:block;
+        font-size:2.5rem;
+        font-weight: 400;
+        margin-left:30px;
+        letter-spacing: 3.7rem;
+        animation-name: moveInLeft ;
+        animation-duration: 1s;
+        animation-timing-function: ease-in-out;
+    }
+    &--desc{
+        display:block;
+        font-size:1.2rem;
+        font-weight: 400;
+        letter-spacing: 1.3rem;
+        animation-name: moveInRight ;
+        animation-duration: 1s;
+        animation-timing-function: ease-in-out;
+        margin-bottom:2rem;
+    }
+}
+
+.c-text-secondary{
+    font-size:3.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-image:linear-gradient(to right,$mint-light,$mint-light);
+    display:inline-block;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color:transparent;
+    letter-spacing:0.2rem;
+    transition:all 500ms;
+    position:relative;
+    z-index:100;
+
+    &:hover{
+       transform:skewY(2deg) skewX(15deg);
+    }
+}
+.c-text-tertiary{
+    font-size:1.6rem;
+    font-weight: 700;
+    text-transform:uppercase;
+   
+    
+}
+.paragraph{
+    font-size:1.6rem;
+    
+    &:not(:last-child){
+        margin-bottom:4rem;
+        
+    }
+}

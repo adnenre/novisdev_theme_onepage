@@ -1,0 +1,31 @@
+
+
+
+.c-field{
+    &__label{
+     width:100%;
+     display:block;
+
+    }
+    &__input{
+        background: #f3f3f3;
+       
+        color: $black-50;
+        float: left;
+        border: solid 1px $black-10;
+        font-size: 1rem;
+        height: 30px;
+        line-height: 30px;
+        margin-bottom: 2rem;
+        padding: 1rem 2rem;
+        width: 100%
+    }
+    &__text-box{
+        border: solid 1px $black-10;
+        color: $black-50;
+        font-size: 1rem;
+        width: 100%;
+        padding: 0.5rem 1rem;
+    }
+}
+

@@ -1,0 +1,7 @@
+
+@mixin cubic-animation{
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(0.585, -0.6, 0.43, 1.65);
+  
+}

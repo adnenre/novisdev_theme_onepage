@@ -1,0 +1,35 @@
+.feature-box{
+
+    
+    padding:2rem 0;
+    &__container{
+        background-color:$white;
+        font-size:1rem;
+        padding:2.5rem 2rem;
+        text-align:center;
+        margin-bottom:2rem;
+        transition:transform .2s ;
+        color:$black;
+        background:$white;
+        transition:.2s;
+        
+    }
+    &__icon{
+        font-size:6rem;
+        background:linear-gradient($mint,$aqua);
+        padding-top:1rem;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color:transparent;
+        transition:0.2s;
+        }
+}
+
+.feature-box__container:hover{
+    background:linear-gradient($mint,$aqua);
+            cursor:pointer;
+            color:white;
+           >.feature-box__icon{
+               color:white;
+           }
+}

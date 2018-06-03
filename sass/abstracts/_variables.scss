@@ -1,0 +1,102 @@
+
+
+// color 
+
+$primary-color    :#2b95fd;
+$secondary-color  :#AB47BC;
+$info-color       :#5bc0de;
+$success-color    :#99cc54;
+$warning-color    :#f0ad4e;
+$danger-color     :#d9534f;
+$dark             :#222;
+
+// social color 
+$facebook:#3b5998;
+$twitter :#0077b5;
+$linkedin:#0077b5;
+$google:#cd4539;
+// natural color
+$grape-light   :#ed5565 !default;
+$grape         :#dA4453 !default;
+$bitter-light  :#fc6e51 !default;
+$bitter        :#e9573f !default;
+$sun-light     :#ffce54 !default;
+$sun           :#f6bb42 !default;
+$grass-light   :#a0d468 !default;
+$grass         :#8cc152 !default;
+$mint-light    :#48cfad !default;
+$mint          :#37bc98 !default;
+$green-500     :#43a047 !default;
+$aqua-light    :#4fc1e9 !default;
+$aqua          :#3bafda !default;
+$jeans-light   :#5d9cec !default;
+$jeans         :#4a89dc !default;
+$lavandre-light:#ac92ec !default;
+$lavandre      :#AB47BC !default;
+$pink-light    :#ec87c0 !default;
+$pink          :#d770ad !default;
+
+$gray-30       :#ccd1d9 !default;
+$gray-40       :#aab2bd !default;
+$gray-50       :#656d78 !default;
+$gray-60       :#434A54 !default;
+
+// white opacity
+$white-10:rgba(255, 255, 255, 0.10) !default;
+$white-15:rgba(255, 255, 255, 0.15) !default;
+$white-20:rgba(255, 255, 255, 0.20) !default;
+$white-25:rgba(255, 255, 255, 0.25) !default;
+$white-30:rgba(255, 255, 255, 0.30) !default;
+$white-35:rgba(255, 255, 255, 0.35) !default;
+$white-40:rgba(255, 255, 255, 0.40) !default;
+$white-45:rgba(255, 255, 255, 0.45) !default;
+$white-50:rgba(255, 255, 255, 0.50) !default;
+$white-55:rgba(255, 255, 255, 0.55) !default;
+$white-60:rgba(255, 255, 255, 0.60) !default;
+$white-65:rgba(255, 255, 255, 0.65) !default;
+$white-70:rgba(255, 255, 255, 0.70) !default;
+$white-75:rgba(255, 255, 255, 0.75) !default;
+$white-80:rgba(255, 255, 255, 0.80) !default;
+$white-85:rgba(255, 255, 255, 0.85) !default;
+$white-90:rgba(255, 255, 255, 0.90) !default;
+$white            :#ffffff;
+// black opacity 
+$black-10:rgba(0,0,0, 0.10) !default;
+$black-15:rgba(0,0,0, 0.15) !default;
+$black-20:rgba(0,0,0, 0.20) !default;
+$black-25:rgba(0,0,0, 0.25) !default;
+$black-30:rgba(0,0,0, 0.30) !default;
+$black-35:rgba(0,0,0, 0.35) !default;
+$black-40:rgba(0,0,0, 0.40) !default;
+$black-45:rgba(0,0,0, 0.45) !default;
+$black-50:rgba(0,0,0, 0.50) !default;
+$black-55:rgba(0,0,0, 0.55) !default;
+$black-60:rgba(0,0,0, 0.60) !default;
+$black-65:rgba(0,0,0, 0.65) !default;
+$black-70:rgba(0,0,0, 0.70) !default;
+$black-75:rgba(0,0,0, 0.75) !default;
+$black-80:rgba(0,0,0, 0.80) !default;
+$black-85:rgba(0,0,0, 0.85) !default;
+$black-90:rgba(0,0,0, 0.90) !default;
+$black   :#000000 !default;
+
+
+/*
+# 2-FONT-SIZE
+#######################################################################*/
+
+$font-size-xsmall: 0.8rem;
+$font-size-small : 1rem;
+$font-size-medium: 1.5rem;
+$font-size-large : 2rem;
+$font-size-xlarge: 5rem;
+
+/*
+# 2-SPACING
+#######################################################################*/
+
+$s-xsmall: 10px;
+$s-small : 15px;
+$s       : 25px;
+$s-large : 50px;
+$s-xlarge: 100px;

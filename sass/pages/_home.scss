@@ -1,0 +1,41 @@
+/******** this must be removed after **/
+.test{
+    font-size:2rem;
+    color:white;
+    padding:1rem;
+    background:$dark;
+    position:fixed;
+}
+
+.bg-1{
+    background-image: url('../images/img-1.jpeg');
+   
+}
+
+.c-home{
+    display:flex;
+    height:100vh;
+    position:relative;
+
+    &__container{
+        display: flex;
+        position: fixed;
+        width: 100%;
+       
+       
+        
+        z-index: 0;
+    }
+    &__text-box{
+      
+       margin:auto;
+       text-align:center;
+      
+    }
+}
+.c-text--fixed{
+    position:fixed;
+    z-index: -1;
+    transform:translateX(-50%);
+    
+}
